@@ -159,9 +159,7 @@ EXTERNAL METIS_PartMeshDual
 EXTERNAL METIS_PartMeshNodal
 integer,ALLOCATABLE,DIMENSION(:),intent(in)::IESHAPE
 !!!!!!!!!!!!!!!!
-TYPE::elementglobal
-  INTEGER::ELEMENTGLID,NodeID1,NodeID2,NodeID3,NodeID4,NodeID5,NodeID6,NodeID7,NodeID8!,vweight!,vsize
-END TYPE elementglobal
+
 !!!!!!!!!!!!!!!
 real::average
 integer::maxi
@@ -180,7 +178,7 @@ integer(c_int),allocatable,dimension(:)::AllnodesPTR,ALLNODES
 integer(c_int),allocatable,dimension(:)::xmpiee,XMPIDUMB,vwgt, vsize
 real(c_float),allocatable,dimension(:) :: tpwgts
 integer(c_int),dimension(0:39)::options
-TYPE(elementglobal),ALLOCATABLE,DIMENSION(:)::Elements
+TYPE(A_elementglobal),ALLOCATABLE,DIMENSION(:)::Elements
 ! use intrinsic        :: iso_c_binding
 !  vwgt   = c_null_ptr    !added
 !  vsize  = c_null_ptr    !added
@@ -401,9 +399,7 @@ EXTERNAL METIS_PartMeshDual
 EXTERNAL METIS_PartMeshNodal
 integer,ALLOCATABLE,DIMENSION(:),intent(in)::IESHAPE
 !!!!!!!!!!!!!!!!
-TYPE::elementglobal
-  INTEGER::ELEMENTGLID,NodeID1,NodeID2,NodeID3,NodeID4,NodeID5,NodeID6,NodeID7,NodeID8!,vweight!,vsize
-END TYPE elementglobal
+
 !!!!!!!!!!!!!!!
 real::average,average2
 integer::maxi,maxi2
@@ -423,7 +419,7 @@ integer(c_int),allocatable,dimension(:)::xmpiee,XMPIDUMB,vwgt, vsize
 real(c_float),allocatable,dimension(:) :: tpwgts
 integer(c_int),dimension(0:39)::options
 
-TYPE(elementglobal),ALLOCATABLE,DIMENSION(:)::Elements
+TYPE(A_elementglobal),ALLOCATABLE,DIMENSION(:)::Elements
 ! use intrinsic        :: iso_c_binding
 !  vwgt   = c_null_ptr    !added
 !  vsize  = c_null_ptr    !added
@@ -703,9 +699,6 @@ EXTERNAL METIS_PartMeshDual
 EXTERNAL METIS_PartMeshNodal
 integer,ALLOCATABLE,DIMENSION(:),intent(in)::IESHAPE
 !!!!!!!!!!!!!!!!
-TYPE::elementglobal
-  INTEGER::ELEMENTGLID,NodeID1,NodeID2,NodeID3,NodeID4,NodeID5,NodeID6,NodeID7,NodeID8!,vweight!,vsize
-END TYPE elementglobal
 !!!!!!!!!!!!!!!
 real::average,average2
 integer::maxi,maxi2
@@ -725,7 +718,7 @@ integer(c_int),allocatable,dimension(:)::xmpiee,XMPIDUMB,vwgt, vsize
 real(c_float),allocatable,dimension(:) :: tpwgts
 integer(c_int),dimension(0:39)::options
 
-TYPE(elementglobal),ALLOCATABLE,DIMENSION(:)::Elements
+TYPE(A_elementglobal),ALLOCATABLE,DIMENSION(:)::Elements
 ! use intrinsic        :: iso_c_binding
 !  vwgt   = c_null_ptr    !added
 !  vsize  = c_null_ptr    !added
@@ -961,9 +954,6 @@ EXTERNAL METIS_PartMeshDual
 EXTERNAL METIS_PartMeshNodal
 integer,ALLOCATABLE,DIMENSION(:),intent(in)::IESHAPE
 !!!!!!!!!!!!!!!!
-TYPE::elementglobal
-  INTEGER::ELEMENTGLID,NodeID1,NodeID2,NodeID3,NodeID4,NodeID5,NodeID6,NodeID7,NodeID8!,vweight!,vsize
-END TYPE elementglobal
 !!!!!!!!!!!!!!!
 real::average
 integer::maxi
@@ -981,7 +971,7 @@ integer(c_int),allocatable,dimension(:)::AllnodesPTR,ALLNODES
 integer(c_int),allocatable,dimension(:)::xmpiee,XMPIDUMB,vwgt, vsize
 real(c_float),allocatable,dimension(:) :: tpwgts
 integer(c_int),dimension(0:39)::options
-TYPE(elementglobal),ALLOCATABLE,DIMENSION(:)::Elements
+TYPE(A_elementglobal),ALLOCATABLE,DIMENSION(:)::Elements
 ! use intrinsic        :: iso_c_binding
 !  vwgt   = c_null_ptr    !added
 !  vsize  = c_null_ptr    !added
